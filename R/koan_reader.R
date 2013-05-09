@@ -14,21 +14,23 @@ read_koan <- function(test_file, koan, reporter = "summary"){
 
 koan_template <- function(context, title, path, koan_file){
     cat(sprintf(
-        'context("%s")\ntest_that("%s",{\n  `_` <- NULL\n  source(file.path("..", "%s"), local = TRUE)\n  })', 
+        'context("%s")\ntest_that("%s",{\n  `_` <- NULL\n  source(file.path("..", "%s"), local = TRUE)\n})', 
         context, title, path),
         file = koan_file )
 }
 
 # make this more elegant!
-#koan_file <- tempfile()
-#koan_template(koan$context, koan$title, koan$koan, koan_file)
-#k <- read_koan(test_file = koan_file, koan = koan$koan, reporter = "summary")
+# koan <- koans[[1]]
+# koan_template(koan$context, koan$title, koan$koan, koan$test_file)
+# 
+# k <- read_koan(test_file = koan$test_file, koan = koan$koan, reporter = "summary")
 
 #' Reads in a list of koans. If one fails it halts
 #' @name read_koans
 read_koans <- function(){
     for(koan in koans){
-        k <- read_koan(test_file = koan$test_file, koan = koan$koan, reporter = "summary")
+        koan_template(koan$context, koan$title, koan$koan, "temp/koan.R")
+        k <- read_koan(test_file = "temp/koan.R", koan = koan$koan, reporter = "summary")
         if(!k) return(cat("Study this koan to gain new insight...\n"))
         
     }
