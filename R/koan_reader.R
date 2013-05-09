@@ -4,20 +4,32 @@
 read_koan <- function(test_file, koan, reporter = "summary"){
     karma <- (test_file(test_file, reporter = "summary"))
     if(!karma$failed){
-        cat(sprintf("%s has expanded your awareness\n", basename(koan)))
+        cat(sprintf("You have seen through %s!\n", basename(koan)))
         TRUE
     } else {
-        cat(sprintf("%s has damaged your karma\n", basename(koan)))
+        cat(sprintf("%s is an obstacle to your awakening!\n", basename(koan)))
         FALSE
     }
 }
+
+koan_template <- function(context, title, path, koan_file){
+    cat(sprintf(
+        'context("%s")\ntest_that("%s",{\n  `_` <- NULL\n  source(file.path("..", "%s"), local = TRUE)\n  })', 
+        context, title, path),
+        file = koan_file )
+}
+
+# make this more elegant!
+#koan_file <- tempfile()
+#koan_template(koan$context, koan$title, koan$koan, koan_file)
+#k <- read_koan(test_file = koan_file, koan = koan$koan, reporter = "summary")
 
 #' Reads in a list of koans. If one fails it halts
 #' @name read_koans
 read_koans <- function(){
     for(koan in koans){
-        k <- eval(parse(text = koan))
-        if(!k) return(cat("Check this file to acheive enlightenment...\n"))
+        k <- read_koan(test_file = koan$test_file, koan = koan$koan, reporter = "summary")
+        if(!k) return(cat("Study this koan to gain new insight...\n"))
         
     }
     cat("You are now the master, there is no more I can teach you.\n", file = "koans/master")
@@ -43,7 +55,7 @@ koan_watcher <- function(added, deleted, modified){
     }
 }
 
-#' Main loop for runing koan study
+#' Main loop for running koan study
 #' @name study_koans
 study_koans <- function(){
     master <- "koans/master"

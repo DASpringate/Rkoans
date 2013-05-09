@@ -1,6 +1,7 @@
 #' list of koans to run
-#' As strings to be eval()'d - a lazy way to make a lazy list!
+#' context and title included to hopefully run from a single loan file (when I get around to it!)
 #' @name koans
+
 koans <- list(
-    'read_koan(test_file = "R/koan1.R", koan = "koans/what_is_true.R", reporter = "summary")',
-    'read_koan(test_file = "R/koan2.R", koan = "koans/on_vectors.R", reporter = "summary")')
+    list(context = "What is this?", title = "What is true, is true", test_file = "R/base_koans/koan1.R", koan = "koans/what_is_true.R"),
+    list(context = "What is this?", title = "Emptiness is form", test_file = "R/base_koans/koan2.R", koan = "koans/on_vectors.R"))
