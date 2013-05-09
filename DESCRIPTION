@@ -1,0 +1,12 @@
+Package: Rkoans
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Author: mdehsds4
+Version: 1.0
+License: GPL-3
+Title: 
+Description: 
+Suggests:
+    testthat,
+    roxygen2
+Collate:
+    'Rkoans-package.r'
