@@ -1,0 +1,61 @@
+RKoans
+======
+
+Rkoans are a fun and easy way to learn R through test-driven development.  No previous knowledge of R is required.
+
+### Getting started
+
+You can install Rkoans directly from Github using the `devtools` package
+
+```{r}
+install_github(".../")
+```
+
+### Studying the koans
+
+To start learning R through the Rkoans, first load Rkoans
+
+```{r}
+require("Rkoans")
+```
+
+Then enter
+
+```{r, eval = FALSE}
+study_koans()
+```
+
+and you should see something similar to:
+
+```
+...
+f. Failure: What is true, is true ------------------------------------------------------------------------------------
+TRUE == 0 isn't true
+
+g. Failure: What is true, is true ------------------------------------------------------------------------------------
+TRUE == 2 isn't true
+what_is_true.R is damaging your karma.
+Study this koan to gain new insight...
+```
+
+This is telling you that you have failing tests in the file what_is_true.R.  The koans are all found in the `koans` directory within Rkoans.  Go to that file in your text editor or RStudio and start editing the tests in order to make them pass.  You will need to fill in the blanks (`_`) so that the test statement is true.  When you save the file, the koan reader will update your progress.  If all the tests pass on your file, you will then move on to the next one.
+
+### Contributing
+
+Patches are encouraged! Send a pull request with a new or revised koan file.  The koanideas.md has lots of ideas for new koans to start, or things to add to existing koans. So write some fun exercises, add your answers to answers/koans.R, check that the tests pass in the package check and I'll get them in there!
+
+Feel free to contact me (David Springate / DASpringate) on Github or elsewhere if you have any questions or want more direction before you start contributing.
+
+### Contributors
+
+### Credits
+
+This project would not have been possible without Hadley wickham's testthat package.
+
+Using the koans metaphor as a tool for learning a programming language started with the Ruby Koans by EdgeCase.  This package was directly influenced by the Clojure Koans and Python Koans.
+
+### License
+
+The use and distribution terms for this software are covered by the ##### which can be found in the file epl-v10.html at the root of this distribution. By using this software in any fashion, you are agreeing to be bound by the terms of this license.
+
+

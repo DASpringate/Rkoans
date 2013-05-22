@@ -6,10 +6,13 @@ License: GPL-3
 Title: R Koans
 Description: A package for learning R through test-driven development
 Depends:
-    testthat
+    testthat,
+    stringr
 Suggests:
     roxygen2
 Collate:
     'Rkoans-package.r'
     'koan_reader.R'
     'koans.R'
+    'koan_tester.R'
+    'wisdom.R'

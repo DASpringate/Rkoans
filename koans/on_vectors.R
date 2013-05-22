@@ -10,6 +10,9 @@ expect_that(is.character(`_`), is_true())
 expect_that(c(`_`), equals(x))
 expect_that(c(`_`), equals(y))
 
+# A number is just a vector of length 1
+expect_that(`_`, equals(c(123)))
+
 
 # All elements of a vector are the same type
 # One element can change the type of the other elements
@@ -29,5 +32,10 @@ expect_that(y[2:3], equals(c(`_`)))
 
 # or with another vector of indexes
 expect_that(y[c(1, 3)], equals(c(`_`)))
+
+# You can name the elements of a vector
+names(x) <- c("a", "b", "c")
+expect_that(names(x), equals(c(`_`)))
+
 
 

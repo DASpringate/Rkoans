@@ -7,7 +7,7 @@ read_koan <- function(test_file, koan, reporter = "summary"){
         cat(sprintf("You have seen through %s!\n", basename(koan)))
         TRUE
     } else {
-        cat(sprintf("%s is an obstacle to your awakening!\n", basename(koan)))
+        cat(sprintf("%s %s\n", basename(koan), sample(incomplete_wisdom, 1)))
         FALSE
     }
 }

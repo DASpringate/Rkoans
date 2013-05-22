@@ -2,7 +2,7 @@
 \name{koans}
 \alias{koans}
 \title{list of koans to run
-context and title included to hopefully run from a single loan file (when I get around to it!)}
+context and title included to run from a single koan template file}
 \format{List of 2
  $ :List of 3
  $ :List of 3}
@@ -10,9 +10,8 @@ context and title included to hopefully run from a single loan file (when I get 
   koans
 }
 \description{
-  list of koans to run context and title included to
-  hopefully run from a single loan file (when I get around
-  to it!)
+  list of koans to run context and title included to run
+  from a single koan template file
 }
 \keyword{datasets}
 
