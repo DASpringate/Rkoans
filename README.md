@@ -15,19 +15,23 @@ cd Rkoans
 
 Then, either fire up R in this directory or start RStudio and create a new project from the Rkoans directory. Then you can load Rkoans  `devtools` package:
 
-```{r, eval = FALSE}
+
+```r
 # Make sure you are in the Rkoans directory
 require(devtools)
 load_all(".")
 ```
 
+
 ## Studying the koans
 
 To start learning R through the Rkoans, first load Rkoans (see above), then enter:
 
-```{r, eval = FALSE}
+
+```r
 study_koans()
 ```
+
 
 and you should see something similar to:
 
@@ -47,19 +51,23 @@ If an answer is not immediately evident, drop out of the koan reader (escape in 
 
 Remember, to ask for help in R, enter `?` and the function you want to know about:
 
-```{r, eval = FALSE}
+
+```r
 # e.g.
-?sign
+`?`(sign)
 ```
+
 
 ## Unit testing with testthat
 
 Rkoans uses the [testthat](https://github.com/hadley/testthat) unit testing framework.  Tests are built from expectations which read almost like English:
 
-```{r, eval = FALSE}
+
+```r
 # testthat expectation example.
 expect_that(1 + 1, equals(2))
 ```
+
 
 For a test to pass, the expectation must be met.
 

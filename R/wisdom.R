@@ -1,5 +1,5 @@
 #' Phrases upon test failures.
-#' @name incomplete_wiosdom
+#' @name incomplete_wisdom
 incomplete_wisdom <- c("is an obstacle to your awakening!",
                        "requires further contemplation.",
                        "is damaging your karma.",

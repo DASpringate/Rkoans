@@ -31,7 +31,7 @@ read_koans <- function(){
     for(koan in koans){
         koan_template(koan$context, koan$title, koan$koan, "temp/koan.R")
         k <- read_koan(test_file = "temp/koan.R", koan = koan$koan, reporter = "summary")
-        if(!k) return(cat("Study this koan to gain new insight...\n"))
+        if(!k) return(cat("Study this koan to deepen your practice...\n"))
         
     }
     cat("You are now the master, there is no more I can teach you.\n", file = "koans/master")
@@ -59,6 +59,7 @@ koan_watcher <- function(added, deleted, modified){
 
 #' Main loop for running koan study
 #' @name study_koans
+#' @export
 study_koans <- function(){
     master <- "koans/master"
     source("R/koans.R")    

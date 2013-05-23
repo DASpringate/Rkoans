@@ -18,6 +18,7 @@ test_koan <- function(name, answer){
 #' Runs checks on all answer files and koan files
 #' This needs to return true before new koans are ready to be applied
 #' @name test_all_koans
+#' @export
 test_all_koans <- function(koan_file = "R/koans.R", answers_file = "answers/koans.R"){
     source(answers_file, local = TRUE)
     source(koan_file, local = TRUE)
@@ -29,7 +30,7 @@ test_all_koans <- function(koan_file = "R/koans.R", answers_file = "answers/koan
                          "answers/koans.R"))
         }
     }
-    cat(sprintf("Congratulations, all tests pass for koan checks\n"))
+    cat(sprintf("Congratulations, all tests pass for koan checks!\n"))
     TRUE
 }
  

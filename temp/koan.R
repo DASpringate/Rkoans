@@ -1,5 +1,5 @@
-context("What is this?")
-test_that("What is true, is true",{
+context("The very basics")
+test_that("Using R as a calculator",{
   `_` <- NULL
-  source(file.path("..", "koans/what_is_true.R"), local = TRUE)
+  source(file.path("..", "koans/on_calculations.R"), local = TRUE)
 })
