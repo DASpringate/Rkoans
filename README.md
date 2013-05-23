@@ -79,13 +79,13 @@ So far, I have only tested Rkoans on Linux.  Other platforms (particularly Windo
 
 ## Contributing
 
-Patches are encouraged! Send me a pull request with a new or revised koan file.  Look here for lots of ideas for new koans to start, or things to add to existing koans. So write some fun exercises, add your koans to R/koans.R and your answers to answers/koans.R, check that the tests pass using the koan_tester.R functions and I'll include them!
+Patches are encouraged! Send me a pull request with a new or revised koan file.  Look [here](https://github.com/DASpringate/Rkoans/tree/master/koans) for lots of ideas for new koans to start, or things to add to existing koans. So write some fun exercises, add your koans to R/koans.R and your answers to answers/koans.R, check that the tests pass using the koan_tester.R functions and I'll include them!
 
 Feel free to contact me if you have any questions or want more information before you start contributing.
 
 ## Contributors
 
-TBC
+[Contributors to Rkoans](https://github.com/DASpringate/Rkoans/contributors)
 
 ## Credits
 
