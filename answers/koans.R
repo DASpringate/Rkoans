@@ -28,4 +28,12 @@ answers <- list("what_is_true" = c("TRUE",
                 "on_calculations" = as.character(c(2,0, 90,256, 40000,
                                                    0, 1,  0, 200, 4,
                                                    7.389056,  3, 100, 7, 8,
-                                                   3, 1, 0,  -1, 3.142, 3.14)))
+                                                   3, 1, 0,  -1, 3.142, 3.14)),
+                "everything_is_a_function" = c("1+2", '"function"', "1:10", 
+                                                 '"function"', "1:10 %% 2", '"function"', 
+                                                 '"r" %in% letters', "x[5]"))
+
+
+
+
+

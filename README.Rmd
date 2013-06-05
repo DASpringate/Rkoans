@@ -1,9 +1,9 @@
 RKoans
 ======
 
-Rkoans is an interactive tutorial for learning R in a Unit-testing framework with added cod-Zen fluff.  No previous knowledge of R is required.
+Rkoans is an interactive tutorial for learning R in a Unit-testing framework.  No previous knowledge of R is required.
 
-As well as being a fun way to learn R, it is also a good way to get an idea of Test-driven development.
+As well as being a fun way to learn R, it is also a good way to get an idea of test-driven development.
 ## Getting started
 
 First, you need to clone the Rkoans repo and change into the Rkoans directory:
@@ -20,6 +20,8 @@ Then, either fire up R in this directory or start RStudio and create a new proje
 require(devtools)
 load_all(".")
 ```
+
+Don't install Rkoans as a package because you will need access to some of the folders within as you work through the koans.
 
 ## Studying the koans
 
@@ -71,7 +73,7 @@ So far, I have only tested Rkoans on Linux.  Other platforms (particularly Windo
 
 ## Contributing
 
-Patches are encouraged! Send me a pull request with a new or revised koan file.  Look [here](https://github.com/DASpringate/Rkoans/tree/master/koans) for lots of ideas for new koans to start, or things to add to existing koans. So write some fun exercises, add your koans to R/koans.R and your answers to answers/koans.R, check that the tests pass using the koan_tester.R functions and I'll include them!
+New Rkoans are very welcome! Send me a pull request with a new or revised koan file.  Look [here](https://github.com/DASpringate/Rkoans/wiki/Ideas-for-future-koans) for lots of ideas for new koans to start, or things to add to existing koans. 
 
 Feel free to contact me if you have any questions or want more information before you start contributing.
 

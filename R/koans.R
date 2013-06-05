@@ -4,7 +4,9 @@
 koans <- list(
     list(context = "The very basics", title = "Using R as a calculator",  koan = "koans/on_calculations.R"),
     list(context = "The very basics", title = "What is true, is true",  koan = "koans/what_is_true.R"),
-    list(context = "The very basics", title = "Emptiness is form",  koan = "koans/on_vectors.R"))
+    list(context = "The very basics", title = "Emptiness is form",  koan = "koans/on_vectors.R"),
+    list(context = "Functional Programming", title = "Everything is a function",  
+         koan = "koans/everything_is_a_function.R"))
 
 
 #list(context = "Functional Programming", title = "Apply functions", koan = "koans/on_apply_functions.R")
