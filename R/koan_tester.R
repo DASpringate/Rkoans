@@ -30,7 +30,7 @@ test_all_koans <- function(koan_file = "R/koans.R", answers_file = "answers/koan
                          "answers/koans.R"))
         }
     }
-    cat(sprintf("Congratulations, all tests pass for koan checks!\n"))
+    cat(sprintf("Congratulations, all tests pass the koan checker!\n"))
     TRUE
 }
  

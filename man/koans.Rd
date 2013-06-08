@@ -3,7 +3,9 @@
 \alias{koans}
 \title{list of koans to run
 context and title included to run from a single koan template file}
-\format{List of 3
+\format{List of 5
+ $ :List of 3
+ $ :List of 3
  $ :List of 3
  $ :List of 3
  $ :List of 3}

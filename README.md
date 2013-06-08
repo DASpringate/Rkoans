@@ -4,6 +4,7 @@ RKoans
 Rkoans is an interactive tutorial for learning R in a Unit-testing framework.  No previous knowledge of R is required.
 
 As well as being a fun way to learn R, it is also a good way to get an idea of test-driven development.
+
 ## Getting started
 
 First, you need to clone the Rkoans repo and change into the Rkoans directory:
@@ -78,6 +79,10 @@ For more on using the testthat framework, see this [paper](http://journal.r-proj
 ## Stability
 
 So far, I have only tested Rkoans on Linux.  Other platforms (particularly Windows) may have problems.
+
+## Further information
+
+Check out the [Rkoans wiki](https://github.com/DASpringate/Rkoans/wiki)
 
 ## Contributing
 
