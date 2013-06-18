@@ -1,6 +1,10 @@
 #' Reads in a test file
 #' @name read_koan
 #' @description Reads in a file of testthat asserts
+#' @param test_file the koan file currently being studied
+#' @param koan current koan
+#' @param reporter passed to testthat
+#' @return logical TRUE if all tests pass, otherwise FALSE
 read_koan <- function(test_file, koan, reporter = "summary"){
     karma <- (test_file(test_file, reporter = "summary"))
     if(!karma$failed){
@@ -12,6 +16,8 @@ read_koan <- function(test_file, koan, reporter = "summary"){
     }
 }
 
+#' Build a template file to run testthat over
+#' @name koan_template
 koan_template <- function(context, title, path, koan_file){
     cat(sprintf(
         'context("%s")\ntest_that("%s",{\n  `_` <- NULL\n  source(file.path("..", "%s"), local = TRUE)\n})', 

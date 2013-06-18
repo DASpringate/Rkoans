@@ -55,7 +55,7 @@ expect_that(my_list$boolean, equals(`_`))
 list2 <- list(1:20, sum)
 expect_that(list2[[2]](list2[[1]]), equals(`_`))
 
-... and other lists...
+# ... and other lists...
 
 list3 <- list(list(1,2,3), list(4,5,6), list(7,8, list (9, 10, list(11, 12, 13, 14))))
 

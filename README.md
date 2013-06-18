@@ -7,14 +7,14 @@ As well as being a fun way to learn R, it is also a good way to get an idea of t
 
 ## Getting started
 
-First, you need to clone the Rkoans repo and change into the Rkoans directory:
+First, you need to clone the Rkoans repo to somewhere you have write access and then change into the Rkoans directory:
 
 ```
 git clone
 cd Rkoans
 ```
 
-Then, either fire up R in this directory or start RStudio and create a new project from the Rkoans directory. Then you can load Rkoans  `devtools` package:
+Then, either fire up R in this directory or start RStudio and create a new project from the Rkoans directory. Then you can load Rkoans package using `devtools`:
 
 
 ```r
@@ -24,11 +24,11 @@ load_all(".")
 ```
 
 
-Don't install Rkoans as a package because you will need access to some of the folders within as you work through the koans.
+_Don't install Rkoans as a package because you will need access to some of the folders within as you work through the koans._
 
 ## Studying the koans
 
-To start learning R through the Rkoans, first load Rkoans (see above), then enter:
+To start learning R using the Rkoans, first load Rkoans (see above), then enter:
 
 
 ```r

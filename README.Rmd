@@ -22,11 +22,11 @@ require(devtools)
 load_all(".")
 ```
 
-Don't install Rkoans as a package because you will need access to some of the folders within as you work through the koans.
+_Don't install Rkoans as a package because you will need access to some of the folders within as you work through the koans._
 
 ## Studying the koans
 
-To start learning R through the Rkoans, first load Rkoans (see above), then enter:
+To start learning R using the Rkoans, first load Rkoans (see above), then enter:
 
 ```{r, eval = FALSE}
 study_koans()
