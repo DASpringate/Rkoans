@@ -10,7 +10,7 @@ As well as being a fun way to learn R, it is also a good way to get an idea of t
 First, you need to clone the Rkoans repo to somewhere you have write access and then change into the Rkoans directory:
 
 ```
-git clone
+git clone https://github.com/DASpringate/Rkoans.git
 cd Rkoans
 ```
 
