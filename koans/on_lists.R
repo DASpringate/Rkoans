@@ -52,21 +52,21 @@ expect_that(my_list$boolean, equals(`_`))
 ## lists can hold any data structure 
 # ...including functions...
 
-list2 <- list(1:20, sum)
-expect_that(list2[[2]](list2[[1]]), equals(`_`))
+data_structures_list <- list(1:20, sum)
+expect_that(data_structures_list[[2]](data_structures_list[[1]]), equals(`_`))
 
 # ... and other lists...
 
-list3 <- list(list(1,2,3), list(4,5,6), list(7,8, list (9, 10, list(11, 12, 13, 14))))
+nested_lists <- list(list(1,2,3), list(4,5,6), list(7,8, list (9, 10, list(11, 12, 13, 14))))
 
-expect_that(length(list3), equals(`_`))
-expect_that(length(list3[[3]]), equals(`_`))
-expect_that(length(list3[[3]][[3]]), equals(`_`))
-expect_that(length(list3[[3]][[3]][[3]]), equals(`_`))
+expect_that(length(nested_lists), equals(`_`))
+expect_that(length(nested_lists[[3]]), equals(`_`))
+expect_that(length(nested_lists[[3]][[3]]), equals(`_`))
+expect_that(length(nested_lists[[3]][[3]][[3]]), equals(`_`))
 
 ## lists can be flattened to vectors using unlist()
-expect_that(class(unlist(list3)), equals(`_`))
-expect_that(length(unlist(list3)), equals(`_`))
+expect_that(class(unlist(nested_lists)), equals(`_`))
+expect_that(length(unlist(nested_lists)), equals(`_`))
 
 ## You can concatenate the elements of multiple lists using c()
 
