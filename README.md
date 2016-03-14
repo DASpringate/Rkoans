@@ -23,6 +23,17 @@ require(devtools)
 load_all(".")
 ```
 
+Alternatively, you can use Visual Studio with the [R Tools](https://www.visualstudio.com/en-us/features/rtvs-vs.aspx) extension.  Then install and load the required packages:
+
+```r
+# Make sure you are in the Rkoans directory
+install.packages("devtools")
+install.packages("roxygen2")
+install.packages("testthat")
+require(devtools)
+load_all(".")
+```
+
 
 _Don't install Rkoans as a package because you will need access to some of the folders within as you work through the koans._
 
